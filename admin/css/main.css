@@ -1,0 +1,21 @@
+@charset "utf-8";
+.tieude {
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000;
+}
+.bo {
+	margin: 2px;
+	border: 1px solid #000000;
+}
+.hea {
+	font-weight: bold;
+}
+.hea1 {
+	font-weight: bold;
+	font-size: 12px;
+}
+body {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}

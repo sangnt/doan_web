@@ -1,0 +1,26 @@
+#footer{
+    background-color: #333333;
+    min-height: 240px;
+    margin-top: 50px;
+}
+.contact{
+    float: none;
+    margin: 0 auto;
+    width: 310px;
+    margin-top: 60px;
+}
+.social_network{
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 10px;
+}
+#footer .phone_number{
+    font-size: 24px;
+}
+.phone_number font{
+    color: #e8e8e8;
+}
+.font_8 {
+    font: normal normal normal 14px/1.4em Georgia,palatino,'book antiqua','palatino linotype',serif;
+    color: #333333;
+}

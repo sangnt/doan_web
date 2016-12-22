@@ -1,0 +1,48 @@
+#content{
+}
+.slideshow img{
+    max-width: 100%;
+}
+.album{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 1020px;
+    margin: auto;
+}
+.album .title-line h3{
+    background-color: #ffffff;
+}
+.album .title-line::before{
+    border-top: 1px solid #ccc;
+}
+.album .card{
+    border: 1px dashed #c2c2c2;
+    border-radius: 5px;
+    margin: 20px 20px;
+    max-width: 210px;
+    text-align: center;
+    padding: 0;
+
+}
+.album .thumbnail{
+    border: none;
+}
+.album .thumbnail .caption{
+    text-align: center;
+}
+.album .thumbnail > a > img{
+    border-radius: 5px;
+}
+.album .thumbnail .caption .font_7{
+    font-family: Coquette;
+    font-size: 20px;
+    color: #b32125;
+}
+.swiper-pagination,.swiper-button-next,.swiper-button-prev{
+    display: none;
+}
+.album .btn-default {
+    color: #613806;
+    background-color: #4e9171;
+    border-color: #4e9171;
+}

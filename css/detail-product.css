@@ -1,0 +1,145 @@
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #000;
+    max-width: 900px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #000;
+    color: white;
+}
+.modal-header h2{
+    color: #FFF;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 2px 16px;
+    min-height: 300px;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+
+.modal .btn-primary {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #000;
+    border:none;
+    width: 270px;
+    height: 40px;
+    border-radius: 0;
+    background-color: #FF60AD;
+    line-height: 30px;
+}
+.modal .btn-primary:hover{
+    background-color: #E5167A;
+}
+.modal .brand-icons{
+    margin-top: 40px;
+}
+.modal .line{
+    margin: 20px 0;
+    max-width: 350px;
+    border-top:solid 1px;
+}
+.modal .on-sale{
+    background-color: #E8E8E8;
+    min-height: 60px;
+    text-align: center;
+}
+.modal .on-sale > p{
+    line-height: 60px;
+    margin-top: 30px
+}
+#owl-demo .owl-pagination{
+    display: none;
+}
+#owl-demo .owl-next{
+    color: #000;
+    position: absolute;
+    top:40%;
+    right: -10%;
+}
+#owl-demo .owl-prev{
+    color: #000;
+    position: absolute;
+    top:40%;
+    left: -10%;
+}
+#owl-demo .owl-prev::before {
+    font-family: FontAwesome;
+    content: "\f104";
+    font-size: 80px;
+    color: #F8F8F8;
+}
+#owl-demo .owl-next::before {
+    font-family: FontAwesome;
+    content: "\f105";
+    font-size: 80px;
+    color: #F8F8F8;
+}
+
+
+
+

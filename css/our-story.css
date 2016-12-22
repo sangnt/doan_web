@@ -1,0 +1,66 @@
+body{
+
+}
+#content_our_story .jumbotron{
+    min-height: 540px;
+    margin-top: 10px;
+    background-color: #E8E8E8;
+    padding: 0 0;
+}
+.our_story_info{
+    text-align: center;
+}
+.our_story_info .font_7{
+    font-family: Georgia, serif;
+    font-size: 17px;
+}
+.our_story_info{
+
+}
+.our_story_info p{
+    font-size: 14px;
+    margin-top: -12px;
+}
+.os_border_tpp{
+    border: solid 2px;
+}
+.os_top {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.os_top >div {
+    max-width: 380px;
+    display: block;
+    margin: auto;
+}
+.os_top .font_2{
+    border-top: solid 1px #000;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+.os-bottom{
+
+}
+.os-bottom > div{
+    display: inline-block;
+    max-width: 760px;
+    text-align: center;
+}
+.our_story_info .since{
+    position: relative;
+}
+.our_story_info .since img{
+    margin-top: -10px;
+}
+.our_story_info .title-line .font_7{
+    margin-top: 10px;
+}
+.our_story_info h6{
+    position: absolute;
+    color: #FFF;
+    z-index: 100;
+    top: 0;
+    left: 45.5%;
+    right: 45%;
+}
+

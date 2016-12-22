@@ -1,0 +1,72 @@
+.container_content {
+    max-width: 1020px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.font_9 {
+    font: normal normal normal 13px/1.4em 'Open Sans',sans-serif ;
+    color: #333333;
+}
+.font_8 {
+    font: normal normal normal 14px/1.4em Georgia,palatino,'book antiqua','palatino linotype',serif;
+    color: #333333;
+}
+.font_7 {
+    font: normal normal normal 16px/1.4em 'Open Sans',sans-serif;
+    color: #333333;
+}
+.font_6 {
+    font: normal normal normal 25px/1.4em 'Open Sans',sans-serif;
+    color: #333333;
+}
+.font_5 {
+    font: normal normal normal 34px/1.4em Anton,sans-serif;
+    color: #333333;
+}
+.font_4 {
+    font: normal normal normal 40px/1.4em 'Courier New',courier-ps-w01,courier-ps-w02,courier-ps-w10,monospace;
+    color: #333333;
+}
+.font_3 {
+    font: normal normal normal 60px/1.4em 'Noticia Text',serif;
+    color: #333333;
+}
+.font_2 {
+    font: normal normal normal 53px/1.4em 'Noticia Text',serif;
+    color: #333333;
+}
+.title-line{
+    display: block;
+    text-align: center;
+    margin-bottom: 0;
+    position: relative;
+}
+.title-line:before {
+    display: table;
+    content: "";
+    border-top: 1px solid #333333;
+    width: 100%;
+    position: absolute;
+    top: 25px;
+    padding-top: 1px;
+}
+.title-line h3 {
+    display: inline-block;
+    background: #E8E8E8;
+    padding:0 15px;
+    position: relative;
+    z-index: 1;
+    color: #333333;
+    margin: 0 0 10px 0;
+}
+@font-face {
+    font-family: Coquette;
+    src: url(../fonts/Coquette-Light.ttf);
+}
+.font_1 {
+    font-family: Coquette;
+    font-size: 48px;
+    color: #42BFB0
+}

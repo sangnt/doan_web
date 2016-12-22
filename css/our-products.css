@@ -1,0 +1,74 @@
+body{
+
+}
+#our-products .jumbotron{
+    min-height: 365px;
+    margin-top: 10px;
+    margin-bottom: -25px;
+    background-color: #E8E8E8;
+    padding: 0;
+}
+.our-products-info{
+    text-align: center;
+}
+.our-products-info > div{
+    text-align: center;
+    margin: 0 30px;
+}
+#our-products .title-line:before{
+    top: 10px;
+}
+#our-products .title-line h3{
+    padding: 0 50px;
+}
+#our-products .our-products-info >div > h5{
+    line-height: 0.5em;
+}
+#our-products .btn-primary {
+    margin-top: -25px;
+    color: #fff;
+    border:none;
+    width: 230px;
+    height: 25px;
+    border-radius: 0;
+}
+.our-products-info .btn-primary:hover .arrow_box:after{
+    border-left-color: #555;
+}
+#our-products a.arrow_box{
+    font: normal normal normal 13px/1.4em 'Open Sans',sans-serif;
+    color: #F8F8F8;
+    line-height:25px;
+    text-align:center;
+    padding:0 10px;
+    background-color:#333333;
+    position:relative;
+    display:inline-block;
+}
+#our-products a.arrow_box:after{
+    position:absolute;
+    right:-12px;
+    content:" ";
+    border-style: solid;
+    border-width: 13px 0 12px 12px;
+    border-color: transparent transparent transparent #333333;
+}
+#our-products a.arrow_box:hover{
+    background-color:#555;
+}
+#our-products a.arrow_box:hover:after{
+    border-color: transparent transparent transparent #555;
+}
+.our-products-info h4.font_7{
+    min-height: 27px;
+    line-height: 27px;
+}
+.our-products-info h5.font_9{
+    line-height: 10px;
+}
+.our-products-info h3.font_5{
+    margin-top: -10px;
+    padding-bottom: 20px;
+}
+
+

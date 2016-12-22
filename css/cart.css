@@ -1,0 +1,127 @@
+body{
+
+}
+
+#cart .jumbotron{
+    min-height: 500px;
+    background-color: #E8E8E8;
+    padding: 15px;
+    margin: auto;
+}
+.cart-info{
+    text-align: center;
+}
+
+#cart .title-line:before{
+    top: 10px;
+}
+#cart .title-line h3{
+    max-width:300px ;
+    padding: 0 30px;
+}
+#cart .cart-content{
+    padding-top: 10px;
+    max-width: 800px;
+    min-height: 350px;
+    margin: auto;
+    position: relative;
+    margin-top: 30px;
+}
+.cart-content .fa{
+    font-size: 70px;
+}
+.cart-info .cart-header{
+    max-width: 400px;
+    margin-bottom: 50px;
+    margin: auto;
+}
+.cart-content .table{
+    background-color: #FFF;
+    border: solid 1px;
+    margin-bottom: 0px;
+    max-width: 800px;
+}
+.cart-content .table th{
+    text-align: center;
+    color: #F8F8F8;
+}
+#quantity{
+    height: 30px;
+    max-width: 70px;
+    border: solid 1px;
+}
+.cart-content .table td{
+    line-height: 70px;
+}
+#cart .cart-content .table .thead{
+    background-color: #333;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: solid 1px;
+}
+#cart .cart-content .table .tbody{
+    border:solid 1px ;
+}
+#cart .cart-content .thead .font_8{
+    line-height: 40px;
+}
+#cart .cart-content .fa-times{
+    font-size: 20px;
+    cursor: pointer;
+}
+#cart .cart-content img{
+    width: 50px;
+}
+#cart .cart-info .total{
+    margin-top: 10px;
+    min-height: 55px;
+    line-height: 55px;
+    position: absolute;
+    right: 0;
+    text-align: right;
+}
+#cart .cart-info .money{
+    background-color: #F8F8F8;
+    border: solid 1px;
+    padding: 0 10px;
+    width: 300px;
+    display: block;
+}
+#cart .cart-info .btn-primary:hover .arrow_box:after{
+    border-left-color: #42BFB0;
+}
+#cart button.arrow_box{
+    font: normal normal normal 16px/1.4em 'Open Sans',sans-serif;
+    color: #F8F8F8;
+    margin-right: 25px;
+    line-height:50px;
+    padding:0 10px;
+    background-color:#42BFB0;
+    position:relative;
+    display:inline-block;
+}
+#cart button.arrow_box:after{
+    position:absolute;
+    right:-26px;
+    content:" ";
+    border-style: solid;
+    border-width: 25px 0 25px 26px;
+    border-color: transparent transparent transparent #42BFB0;
+}
+#cart button.arrow_box:hover{
+    background-color:#8FD4CC;
+}
+#cart button.arrow_box:hover:after{
+    border-color: transparent transparent transparent #8FD4CC;
+}
+#cart .btn-primary {
+    color: #fff;
+    border:none;
+    width: 275px;
+    height: 50px;
+    border-radius: 0;
+    margin-left: -20px;
+    margin-top: 10px;
+}
+#cart .btn{
+}

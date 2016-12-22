@@ -1,0 +1,82 @@
+body{
+    background-color: #F8F8F8;
+}
+#talk_to_us{
+    background-color: #F8F8F8;
+}
+#talk_to_us .jumbotron{
+    min-height: 365px;
+    margin-top: 10px;
+    margin-bottom: -25px;
+    background-color: #E8E8E8;
+    padding: 15px;
+}
+.talk_to_us_info > div{
+    max-width: 620px;
+    text-align: center;
+    margin: auto;
+}
+#talk_to_us .title-line:before{
+    top: 10px;
+}
+#talk_to_us .title-line h3{
+    max-width:300px ;
+    padding: 0 50px;
+}
+#talk_to_us .talk_to_us_info >div >div > h5{
+    line-height: 0.5em;
+}
+
+#talk_to_us .talk_to_us_info .form-control{
+    margin-top: 5px;
+    border: 0;
+    border-radius: 0;
+    background-color: #F8F8F8;
+    font: normal normal normal 14px/1.4em Georgia,palatino,'book antiqua','palatino linotype',serif;
+
+}
+#talk_to_us input.form-control{
+    height: 30px;
+}
+#talk_to_us .form_info{
+    margin-top: 30px;
+}
+#talk_to_us .btn-primary{
+    background-color: #42BFB0;
+    border: none;
+    border-radius:0 ;
+}
+.form_info{
+}
+.QA{
+    margin-top: 50px;
+}
+.question{
+    margin-top: 10px;
+}
+.question .number{
+    float: left;
+    border-right: solid 1px ;
+    width: 50px;
+    display: inline-block;
+}
+.question .number >p{
+    margin-top: -15px;
+}
+.content-box{
+    height:60px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.question .content-q{
+    margin-top: 0px;
+    padding-left: 10px;
+    display: inline-block;
+}
+.content-q >h5{
+    line-height: 0.8em;
+}
+.QA .row{
+    margin-top: 50px;
+}
