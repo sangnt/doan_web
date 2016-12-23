@@ -18,7 +18,7 @@ if (isset($_COOKIE['user'])) {
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Page Description">
     <meta name="author" content="Nguyen Thanh Sang">
-    <title>Enchanter</title>
+    <title>Souvenir</title>
 
     <!-- Bootstrap + CSS -->
     <link href="https://fonts.googleapis.com/css?family=Anton|Noticia+Text|Open+Sans|Open+Sans+Condensed:300"

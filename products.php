@@ -32,26 +32,36 @@ if (isset($_GET['sk'])) {
                 ?>
                 <div class="card col-sm-3 col-xs-6">
                     <div class="thumbnail">
-                        <a href="javascript:void(0);">
-                            <img width="366" height="340"
-                                 src="images/<?php echo $dsp['UrlHinh']; ?>"
-                                 class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                                 alt=""
-                                 sizes="(max-width: 366px) 100vw, 366px"></a>
-                        <div class="caption">
-                            <p class="font_7"><?php echo $dsp['TenSP']; ?></p>
-                            <p class="font_7"><em><b><?php echo $dsp['Gia']; ?></b></em></p>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default">Add to cart</button>
+                        <form name="formSP" action="xulygiohang.php" method="post">
+                            <a href="javascript:void(0);">
+                                <img width="366" height="340"
+                                     src="images/<?php echo $dsp['UrlHinh']; ?>"
+                                     class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                     alt=""
+                                     sizes="(max-width: 366px) 100vw, 366px">
+                            </a>
+                            <div class="caption">
+                                <p class="font_7"><?php echo $dsp['TenSP']; ?></p>
+                                <p class="font_7"><em><b><?php echo $dsp['Gia']; ?></b></em></p>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default" onclick="formSP.submit();">Add to cart
+                                    </button>
+                                </div>
+                                <input type="hidden" name="idSP" value="<?php echo $dsp['idSP']; ?>">
+                                <input type="hidden" id="TenSP" name="TenSP" value="<?php echo $dsp['TenSP']; ?>"/>
+                                <input type="hidden" id="Gia" name="Gia" value="<?php echo $dsp['Gia']; ?>"/>
+                                <input type="hidden" id="UrlHinh" name="UrlHinh"
+                                       value="<?php echo $dsp['UrlHinh']; ?>"/>
+                                <input type="hidden" id="andtocart" name="andtocart"/>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             <?php } ?>
-
         </div>
     </div>
-    <!--        END PRODUCT-->
+</div>
+<!--        END PRODUCT-->
 </div>
 <div class="pag" style="text-align: center;">
     <ul class="pagination">

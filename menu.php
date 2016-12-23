@@ -14,8 +14,8 @@
         <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle title_menus" data-toggle="dropdown">Danh mục</a>
-                    <ul class="dropdown-menu">
+                    <a href="#" class="dropdown-toggle title_menus" id="leve1" data-toggle="dropdown">Danh mục</a>
+                    <ul class="dropdown-menu" id="leve2">
                         <?php
                         $cl = $store->getChungLoai(1);
                         while ($dcl = mysql_fetch_array($cl)) {
