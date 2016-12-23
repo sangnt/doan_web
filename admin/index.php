@@ -1,106 +1,104 @@
 <?php
-session_start();
-ob_start();
-require_once("../DB.php");
-$mysql = new DB;
-$mysql->connect("localhost", "root", "", "doan_web");
+require_once ("../controller.php");
+$store = new bh;
+$store->connect("localhost", "root", "", "doan_web");
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="vi">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Dashboard - Admin Template</title>
-    <link rel="stylesheet" type="text/css" href="css/theme1.css"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
-    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="js/doanhthu.js"></script>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Noticia+Text|Open+Sans|Open+Sans+Condensed:300"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 </head>
-
 <body>
-<div id="container">
-
-    <!--menu-->
-    <div id="header">
-
-        <div id="topmenu">
-            <ul>
-                <li <?php if (!isset($_GET['key'])) { ?> class="current" <?php } ?>><a href="index.php">TRANG CHỦ</a>
+<div class="banner">
+    <nav class="nav navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header" href="#">
+                <a class="navbar-brand">ADMIN SOUVENIR</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#">Link1</a>
                 </li>
-                <li <?php if (isset($_GET['key']) && $_GET['key'] == 'cl') { ?> class="current" <?php } ?> ><a
-                            href="index.php?key=cl">CHỦNG LOẠI</a></li>
-                <li <?php if (isset($_GET['key']) && $_GET['key'] == 'l') { ?> class="current" <?php } ?>><a
-                            href="index.php?key=l">LOẠI</a></li>
-                <li <?php if (isset($_GET['key']) && $_GET['key'] == 'sp') { ?> class="current" <?php } ?>><a
-                            href="index.php?key=sp">SẢN PHẨM</a></li>
-                <li><a href="#">USERS</a></li>
-
             </ul>
+            <form action="" method="post" role="form" class="navbar-form navbar-right">
+                <div class="form-group navbar-right">
+                    <label for="search"></label>
+                    <input type="text" class="form-control" name="search" id="search" placeholder="Search">
+                </div>
+            </form>
         </div>
-    </div>
-    <!--//menu-->
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                    <li><a href="index.php">Trang chủ</a></li>
+                    <li><a href="index.php?key=cl">Chủng loại</a></li>
+                    <li><a href="index.php?key=lsp">Loai sản phẩm</a></li>
+                    <li><a href="index.php?key=sp">Sản phẩm</a></li>
+                </ul>
+            </div>
+            <div class="col-md-10 col-md-offset-2">
+                <div class="col-xs-12">
+                    <div>
+                        <?php
 
-    <div id="wrapper">
-        <div id="content">
-            <?php
-            if (isset($_SESSION['user'])) {
-                ?>
-                <p>Chào bạn <?php echo $_SESSION['user']; ?></p>
-                <?php
-            }
-            ?>
+                        if (isset($_GET['key'])) {
 
-            <div>
-                <?php
+                            switch ($_GET['key']) {
 
-                if (isset($_GET['key'])) {
+                                case "cl":
+                                    include_once("chungloai.php");
+                                    break;
+                                case "lsp":
+                                    include_once("loai.php");
+                                    break;
+                                case "sp":
+                                    include_once("sanpham.php");
+                                    break;
+                                case "themcl":
+                                    include_once("themcl.php");
+                                    break;
+                                case "theml":
+                                    include_once("theml.php");
+                                    break;
+                                case "themsp":
+                                    include_once("themsp.php");
+                                    break;
+                                case "suacl":
+                                    include_once("suacl.php");
+                                    break;
+                                case "sual":
+                                    include_once("sual.php");
+                                    break;
+                                case "suasp":
+                                    include_once("suasp.php");
+                                    break;
+                            }
 
-                    switch ($_GET['key']) {
+                        }
+                        ?>
+                    </div>
+                </div>
 
-                        case "cl":
-                            include_once("chungloai.php");
-                            break;
-                        case "l":
-                            include_once("loai.php");
-                            break;
-                        case "sp":
-                            include_once("sanpham.php");
-                            break;
-                        case "themcl":
-                            include_once("themcl.php");
-                            break;
-                        case "theml":
-                            include_once("theml.php");
-                            break;
-                        case "themsp":
-                            include_once("themsp.php");
-                            break;
-                        case "suacl":
-                            include_once("suacl.php");
-                            break;
-                        case "sual":
-                            include_once("sual.php");
-                            break;
-                        case "suasp":
-                            include_once("suasp.php");
-                            break;
-                    }
-
-                } else {
-                    ?>
-
-                    <div id="columnchart_values2016"></div>
-                    <div id="columnchart_values2015"></div>
-                    <?php
-                }
-                ?>
             </div>
         </div>
     </div>
 </div>
+<script src="js/jquery-1.9.1.min.js"></script>
 </body>
 </html>

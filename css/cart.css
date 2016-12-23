@@ -24,7 +24,6 @@ body{
     max-width: 800px;
     min-height: 350px;
     margin: auto;
-    position: relative;
     margin-top: 30px;
 }
 .cart-content .fa{
@@ -76,7 +75,6 @@ body{
     margin-top: 10px;
     min-height: 55px;
     line-height: 55px;
-    position: absolute;
     right: 0;
     text-align: right;
 }
@@ -85,7 +83,7 @@ body{
     border: solid 1px;
     padding: 0 10px;
     width: 300px;
-    display: block;
+    display: inline-block;
 }
 #cart .cart-info .btn-primary:hover .arrow_box:after{
     border-left-color: #42BFB0;
@@ -122,6 +120,7 @@ body{
     border-radius: 0;
     margin-left: -20px;
     margin-top: 10px;
+    margin-bottom: 50px;
 }
 #cart .btn{
 }

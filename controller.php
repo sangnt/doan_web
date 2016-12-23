@@ -14,8 +14,20 @@ class bh
         $query = "SELECT * FROM nn_chungloai WHERE AnHien = $AnHien ORDER BY ThuTu";
         return mysql_query($query);
     }
+    function getChungLoaiall(){
+        $query = "SELECT * FROM nn_chungloai ORDER BY ThuTu";
+        return mysql_query($query);
+    }
+    function getChungLoaiByID($idCL){
+        $query = "SELECT * FROM nn_chungloai WHERE idCL = $idCL";
+        return mysql_query($query);
+    }
     function getLoaibyidCL($AnHien, $idCL){
         $query = "SELECT * FROM nn_loaisp WHERE idCL = $idCL AND AnHien = $AnHien ORDER BY ThuTu";
+        return mysql_query($query);
+    }
+    function getLoaiallbyidCL($idCL){
+        $query = "SELECT * FROM nn_loaisp WHERE idCL = $idCL ORDER BY ThuTu";
         return mysql_query($query);
     }
     function getLoai($AnHien){
@@ -48,6 +60,35 @@ class bh
     }
     function getSanphamByidLoai($AnHien, $idLoai){
         $query = "SELECT * FROM nn_sanpham WHERE AnHien= $AnHien AND idLoai=$idLoai";
+        return mysql_query($query);
+    }
+    function insertChungLoai($TenCL,$ThuTu,$AnHien){
+        $query = "INSERT INTO nn_chungloai VALUES(NULL,'$TenCL',$ThuTu,$AnHien)";
+        return mysql_query($query);
+    }
+    function deleteChungLoai($idCL){
+        $query = "DELETE FROM nn_chungloai WHERE idCL = $idCL";
+        return mysql_query($query);
+    }
+    function updateChungLoai($idCL,$TenCL,$ThuTu,$AnHien){
+        $query = "UPDATE nn_chungloai SET TenCL = '$TenCL', ThuTu = $ThuTu, AnHien = $AnHien WHERE idCL = $idCL";
+        return mysql_query($query);
+    }
+    function insertLoai($idCL,$TenLoai,$ThuTu,$AnHien){
+        $query = "INSERT INTO nn_loaisp VALUES(NULL,$idCL,'$TenLoai',$ThuTu,$AnHien)";
+        return mysql_query($query);
+    }
+    function deleteLoai($idLoai){
+        $query = "DELETE FROM nn_loaisp WHERE idLoai = $idLoai";
+        return mysql_query($query);
+    }
+    function updateLoai($idLoai,$idCL,$TenLoai,$ThuTu,$AnHien){
+        $query = "UPDATE nn_loaisp SET idCL = $idCL, TenLoai = '$TenLoai', ThuTu = $ThuTu, AnHien = $AnHien WHERE idLoai = $idLoai";
+        return mysql_query($query);
+    }
+    function getSanPhamBangLoai($idLoai,$vitri,$limit){
+
+        $query = "SELECT * FROM nn_sanpham WHERE AnHien = 1 AND idLoai = $idLoai LIMIT $vitri,$limit";
         return mysql_query($query);
     }
 }

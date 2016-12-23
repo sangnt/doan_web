@@ -1,3 +1,8 @@
+<?php
+session_start();
+ob_start();
+?>
+
 <!-- Content -->
 <div id="cart">
     <!-- Content header -->
@@ -12,9 +17,7 @@
                     </div>
                 </div>
                 <?php
-                if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0){
-                for ($i = 0; $i < count($_SESSION['cart']); $i++) {
-//                    $_SESSION['cart'][$i]['idSP'];
+                if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) {
                     ?>
                     <!-- Cart content-->
                     <div class="cart-content">
@@ -29,50 +32,62 @@
                                     <th class="font_8">Xóa</th>
                                 </tr>
 
-
-                                <tr class="tbody">
-                                    <td>
-                                        <div>
-                                            <img src="images/<?php echo $_SESSION['cart'][$i]['UrlHinh']; ?>">
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <span class="font_9"><?php echo $_SESSION['cart'][$i]['TenSP']; ?></span>
-                                    </td>
-                                    <td><span class="font_9">Size</span>Loại lớn</td>
-                                    <td>
-                                        <form action="" method="post">
+                                <?php
+                                $tongtien = 0;
+                                for ($i = 0; $i < count($_SESSION['cart']); $i++) {
+                                    $tongtien += ($_SESSION['cart'][$i]['Gia'] * $_SESSION['cart'][$i]['soluong']);
+                                    ?>
+                                    <tr class="tbody">
+                                        <td>
                                             <div>
-                                                <input type="number" name="" id="quantity" min="1"
-                                                       value="<?php echo $_SESSION['cart'][$i]['soluong']; ?>">
+                                                <img src="images/<?php echo $_SESSION['cart'][$i]['UrlHinh']; ?>">
                                             </div>
-                                        </form>
-                                    </td>
-                                    <td><?php echo $_SESSION['cart'][$i]['Gia']; ?></td>
-                                    <td><i class="fa fa-times" aria-hidden="true"></i></td>
-                                </tr>
-
+                                        </td>
+                                        <td>
+                                            <span class="font_9"><?php echo $_SESSION['cart'][$i]['TenSP']; ?></span>
+                                        </td>
+                                        <td><span class="font_9">Ship</span></td>
+                                        <td>
+                                            <form name="fromupdate" action="xulygiohang.php" method="post">
+                                                <input type="number" name="soluong<?php echo $i; ?>" id="quantity"
+                                                       min="1"
+                                                       value="<?php echo $_SESSION['cart'][$i]['soluong']; ?>">
+                                                <input type="hidden" name="capnhat">
+                                                <i onclick="fromupdate.submit();" class="fa fa-cloud-upload"
+                                                   aria-hidden="true" style="font-size: 18px; cursor: pointer;"></i>
+                                            </form>
+                                        </td>
+                                        <td><?php echo $_SESSION['cart'][$i]['Gia']; ?> ₫</td>
+                                        <td>
+                                            <a href="xulygiohang.php?action=xoa&vitri=<?php echo $i; ?>">
+                                                <i class="fa fa-times" aria-hidden="true"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                <?php } ?>
                             </table>
                         </div>
                         <div class="total">
                             <div class="money">
-                                <span style="float: left">TOTAL</span>
-                                <span>102000</span>
+                                <span style="float: left">TỔNG TIỀN:</span>
+                                <span><?php echo $tongtien; ?> ₫</span>
                             </div>
                             <div>
-                                <button class="btn btn-primary arrow_box">THANH TOÁN</button>
+                                <form action="xulydonhang.php" method="post" name="donhang">
+                                    <button type="submit" class="btn btn-primary arrow_box">THANH TOÁN</button>
+                                </form>
                             </div>
                         </div>
                     </div>
                     <!--End Cart Content-->
-                <?php }}
-                else{
-                ?>
-                <!-- Cart empty -->
-                <h2 class="font_8">Your shopping cart is empty</h2>
-                <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 100px;   "></i>
-                <!-- End Cart empty -->
-                <?php }?>
+                    <?php
+                } else {
+                    ?>
+                    <!-- Cart empty -->
+                    <h2 class="font_8" style="font-size: 15px;">Your shopping cart is<strong> Empty</strong></h2>
+                    <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 200px;"></i>
+                    <!-- End Cart empty -->
+                <?php } ?>
                 <!--cart head-->
             </div>
             <!-- End cart Info -->

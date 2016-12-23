@@ -39,7 +39,7 @@ if (isset($_GET['idLoai'])) {
                                  sizes="(max-width: 366px) 100vw, 366px"></a>
                         <div class="caption">
                             <p class="font_7"><?php echo $dsp['TenSP']; ?></p>
-                            <p class="font_7"><em><?php echo $dsp['Gia']; ?></em></p>
+                            <p class="font_7"><b><em><?php echo $dsp['Gia']; ?> ₫</em></b></p>
                             <div class="btn-group">
                                 <button type="button" class="btn btn-default">And to cart</button>
                             </div>

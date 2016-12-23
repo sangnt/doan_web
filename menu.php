@@ -38,7 +38,7 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="our-products.php" class="dropdown-toggle title_menus " data-toggle="dropdown">Chủ Đề</a>
+                    <a href="our-products.php" class="dropdown-toggle title_menus " data-toggle="dropdown">Sự kiện</a>
                     <ul class="dropdown-menu">
                         <?php
                             $kqsk=$store->getSukien(1,5);

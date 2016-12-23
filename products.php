@@ -42,17 +42,18 @@ if (isset($_GET['sk'])) {
                             </a>
                             <div class="caption">
                                 <p class="font_7"><?php echo $dsp['TenSP']; ?></p>
-                                <p class="font_7"><em><b><?php echo $dsp['Gia']; ?></b></em></p>
+                                <p class="font_7"><em><b><?php echo $dsp['Gia']; ?> ₫</b></em></p>
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-default" onclick="formSP.submit();">Add to cart
+                                    <button type="submit" class="btn btn-default">Add to cart
                                     </button>
                                 </div>
                                 <input type="hidden" name="idSP" value="<?php echo $dsp['idSP']; ?>">
                                 <input type="hidden" id="TenSP" name="TenSP" value="<?php echo $dsp['TenSP']; ?>"/>
                                 <input type="hidden" id="Gia" name="Gia" value="<?php echo $dsp['Gia']; ?>"/>
+                                <input type="hidden" id="soluong" name="soluong" value="1"/>
                                 <input type="hidden" id="UrlHinh" name="UrlHinh"
                                        value="<?php echo $dsp['UrlHinh']; ?>"/>
-                                <input type="hidden" id="andtocart" name="andtocart"/>
+                                <input type="hidden" id="addtocart" name="addtocart"/>
                             </div>
                         </form>
                     </div>

@@ -1,4 +1,5 @@
 <?php
+session_start();
 ob_start();
 require_once("controller.php");
 $store = new bh;
@@ -21,25 +22,24 @@ if (isset($_COOKIE['user'])) {
     <title>Souvenir</title>
 
     <!-- Bootstrap + CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Anton|Noticia+Text|Open+Sans|Open+Sans+Condensed:300"
-          rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="css/header2.css" rel="stylesheet">
-    <link href="css/header.css" rel="stylesheet">
-    <link href="css/content.css" rel="stylesheet">
-    <link href="css/footer.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/swiper.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/find-us.css" rel="stylesheet">
-    <link href="css/our-products.css" rel="stylesheet">
-    <link href="css/cart.css" rel="stylesheet">
-    <link href="css/our-story.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Noticia+Text|Open+Sans|Open+Sans+Condensed:300"
+              rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="css/header2.css" rel="stylesheet">
+        <link href="css/header.css" rel="stylesheet">
+        <link href="css/content.css" rel="stylesheet">
+        <link href="css/footer.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/swiper.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/find-us.css" rel="stylesheet">
+        <link href="css/our-products.css" rel="stylesheet">
+        <link href="css/cart.css" rel="stylesheet">
+        <link href="css/our-story.css" rel="stylesheet">
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 
 </head>
 <body>
@@ -206,5 +206,7 @@ if (isset($_COOKIE['user'])) {
 </script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery-1.9.1.min.js"></script>
+
+
 </body>
 </html>
