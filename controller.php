@@ -91,5 +91,13 @@ class bh
         $query = "SELECT * FROM nn_sanpham WHERE AnHien = 1 AND idLoai = $idLoai LIMIT $vitri,$limit";
         return mysql_query($query);
     }
+    function insertSanPham($idLoai,$idSK,$TenSP,$Gia,$UrlHinh){
+        $query = "INSERT INTO nn_sanpham VALUES(NULL,$idLoai,$idSK,'$TenSP',$Gia,NULL,NULL,'$UrlHinh','NULL',100,NULL,0,0,1)";
+        return mysql_query($query);
+    }
+    function deleteSPbyidSP($idSP){
+        $query = "DELETE FROM nn_sanpham WHERE idSP = $idSP";
+        return mysql_query($query);
+    }
 }
 ?>

@@ -39,10 +39,10 @@ if (isset($_GET['idLoai'])) {
                 <td><?php echo $sp['TenSP']; ?></td>
                 <td><?php echo $sp['Gia']; ?></td>
                 <td><?php echo $sp['MoTa']; ?></td>
-                <td><a href="?key=suacl&idCL=<?php echo $dcl['idCL']; ?>">
+                <td><a href="?key=suasp&idSP=<?php echo $sp['idSP']; ?>">
                         <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                     </a>&nbsp;/&nbsp;
-                    <a href="xuly.php?action=xoacl&idCL=<?php echo $dcl['idCL']; ?>"><i class="fa fa-trash"
+                    <a href="xuly.php?action=xoasp&idSP=<?php echo $sp['idSP']; ?>"><i class="fa fa-trash"
                                                                                         aria-hidden="true"></i></a></td>
             </tr>
             <?php

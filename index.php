@@ -50,16 +50,18 @@ if (isset($_COOKIE['user'])) {
             <div class="top-header">
                 <ul>
                     <?php
-                    $user = "Tài khoản";
+                    $user = "";
                     if (isset($_SESSION['user'])) {
                         $kquser = $store->getUserById($_SESSION['user']);
                         $duser = mysql_fetch_array($kquser);
                         $user = $duser['HoTen'];
-                    }
                     ?>
                     <li>
-                        <a href="#" class="s35label"><i class="fa fa-home" aria-hidden="true"></i><?php echo $user; ?>
-                        </a></li>
+                        <a href="admin/index.php" class="s35label"><i class="fa fa-home" aria-hidden="true"></i><?php echo $user; ?>
+                        </a></li><?php }else{?>
+                    <li>
+                        <a href="#" class="s35label"><i class="fa fa-home" aria-hidden="true"></i>Tài Khoản
+                        </a></li><?php }?>
                     <li>
                         <a href="index.php?key=cart" class="s35label"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Giỏ
                             hàng</a>

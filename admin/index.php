@@ -27,17 +27,13 @@ $store->connect("localhost", "root", "", "doan_web");
     <nav class="nav navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header" href="#">
-                <a class="navbar-brand">ADMIN SOUVENIR</a>
+                <a href="../index.php" class="navbar-brand">SOUVENIR</a>
             </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#">Link1</a>
-                </li>
-            </ul>
-            <form action="" method="post" role="form" class="navbar-form navbar-right">
+            <form action="" method="post" role="form" class="navbar-form navbar-right" style="margin-right: 10px;">
                 <div class="form-group navbar-right">
                     <label for="search"></label>
                     <input type="text" class="form-control" name="search" id="search" placeholder="Search">
+                    <button><i class="fa fa-search" aria-hidden="true" style="font-size: 18px;"></i></button>
                 </div>
             </form>
         </div>
