@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 21, 2016 at 09:14 PM
+-- Generation Time: Dec 24, 2016 at 12:04 PM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 5.6.28
 
@@ -69,11 +69,7 @@ CREATE TABLE `nn_donhang` (
 --
 
 INSERT INTO `nn_donhang` (`idDH`, `idNguoiDung`, `ThoiGianDat`, `TenNguoiNhan`, `DiaDiemGiao`, `NgayGiaoHang`, `Email`, `DienThoai`, `GhiChu`, `TinhTrang`) VALUES
-(7, 106, '2013-03-06 20:48:42', 'Teo', '', '2013-03-07 00:00:00', 'abc@abc.abc', '0901234567', '', 0),
-(8, 0, '2013-03-08 20:14:30', '', '', '0000-00-00 00:00:00', '', '', '', 0),
-(5, 100, '2013-03-06 19:34:13', 'Lê Văn Test', '49 Hoàng Văn Thụ, Phường 2, Quận Phú Nhuận, TP. Hồ Chí Minh', '2013-07-04 00:00:00', 'admin@gmail.com', '0901234567', 'Goi dien truoc khi giao', -1),
-(6, 100, '2013-03-06 19:51:28', 'Lê Văn Test', '49 Hoàng Văn Thụ, Phường 2, Quận Phú Nhuận, TP. Hồ Chí Minh', '2013-03-07 00:00:00', 'admin@gmail.com', '0901234567', '', 4),
-(9, 100, '2014-01-04 20:10:05', 'Lê Văn Test', '49 Hoàng Văn Thụ, Phường 2, Quận Phú Nhuận, TP. Hồ Chí Minh', '2013-03-07 00:00:00', 'admin@gmail.com', '0901234567', '', 0);
+(7, 106, '2013-03-06 20:48:42', 'Teo', '', '2013-03-07 00:00:00', 'abc@abc.abc', '0901234567', '', 0);
 
 -- --------------------------------------------------------
 
@@ -94,16 +90,7 @@ CREATE TABLE `nn_donhangchitiet` (
 
 INSERT INTO `nn_donhangchitiet` (`idDH`, `idSP`, `SoLuong`, `Gia`) VALUES
 (5, 382, 10, '13199000.0000'),
-(5, 371, 1, '14799000.0000'),
-(6, 382, 1, '13199000.0000'),
-(6, 371, 1, '14799000.0000'),
-(7, 375, 1, '13599000.0000'),
-(8, 4, 1, '9799000.0000'),
-(8, 382, 1, '13199000.0000'),
-(8, 136, 1, '4599000.0000'),
-(5, 4, 1, '9799000.0000'),
-(9, 2, 2, '9899000.0000'),
-(9, 1, 1, '11449000.0000');
+(5, 371, 1, '14799000.0000');
 
 -- --------------------------------------------------------
 
@@ -150,7 +137,10 @@ INSERT INTO `nn_loaisp` (`idLoai`, `idCL`, `TenLoai`, `ThuTu`, `AnHien`) VALUES
 (28, 6, 'Lắc tay', 1, 1),
 (29, 6, 'Nhẫn', 1, 1),
 (30, 6, 'Bông tai', 1, 1),
-(31, 6, 'Đồng hồ', 1, 1);
+(31, 6, 'Đồng hồ', 1, 1),
+(87, 28, 'Sang1', 2, 0),
+(85, 28, 'sang1', 1, 1),
+(88, 28, 'aaaa', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -271,7 +261,7 @@ CREATE TABLE `nn_sanpham` (
   `MoTa` text,
   `ChiTiet` text,
   `UrlHinh` varchar(255) NOT NULL,
-  `NgayDang` date NOT NULL,
+  `NgayDang` varchar(255) NOT NULL,
   `TonKho` int(255) NOT NULL DEFAULT '0',
   `GhiChu` varchar(500) DEFAULT NULL,
   `SoLanMua` int(255) NOT NULL DEFAULT '0',
@@ -318,7 +308,7 @@ INSERT INTO `nn_sanpham` (`idSP`, `idLoai`, `idSukien`, `TenSP`, `Gia`, `MoTa`, 
 (33, 9, 5, 'Móc khóa 12', '3089000', '', NULL, 'moc-xinh3.jpg', '0000-00-00', 100, NULL, 0, 0, 1),
 (34, 10, 5, 'Móc khóa 13', '2979000', '', NULL, 'moc-xinh7.jpg', '0000-00-00', 100, NULL, 0, 0, 1),
 (35, 10, 5, 'Móc khóa 14', '2889000', '', NULL, 'moc-xinh4.jpg', '0000-00-00', 100, NULL, 0, 0, 1),
-(489, 23, 4, 'Áo đôi 1', '3099000', '', NULL, 'aodoi1.jpg', '0000-00-00', 100, NULL, 0, 0, 1),
+(489, 23, 5, 'Áo đôi 1', '3099000', '', NULL, 'aodoi1.jpg', '0000-00-00', 100, NULL, 0, 0, 1),
 (490, 23, 5, 'Áo đôi 2', '3089000', '', NULL, 'aodoi2.jpg', '0000-00-00', 100, NULL, 0, 0, 1),
 (491, 23, 5, 'Áo đôi 3', '2979000', '', NULL, 'aodoi3.jpg', '0000-00-00', 100, NULL, 0, 0, 1),
 (492, 23, 5, 'Áo đôi 4', '2889000', '', NULL, 'aodoi4.jpg', '0000-00-00', 100, NULL, 0, 0, 1);
@@ -421,7 +411,7 @@ ALTER TABLE `nn_sukien`
 -- AUTO_INCREMENT for table `nn_chungloai`
 --
 ALTER TABLE `nn_chungloai`
-  MODIFY `idCL` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `idCL` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 --
 -- AUTO_INCREMENT for table `nn_donhang`
 --
@@ -431,7 +421,7 @@ ALTER TABLE `nn_donhang`
 -- AUTO_INCREMENT for table `nn_loaisp`
 --
 ALTER TABLE `nn_loaisp`
-  MODIFY `idLoai` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=83;
+  MODIFY `idLoai` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
 --
 -- AUTO_INCREMENT for table `nn_luachon`
 --
@@ -456,7 +446,7 @@ ALTER TABLE `nn_quantri`
 -- AUTO_INCREMENT for table `nn_sanpham`
 --
 ALTER TABLE `nn_sanpham`
-  MODIFY `idSP` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=493;
+  MODIFY `idSP` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=497;
 --
 -- AUTO_INCREMENT for table `nn_sukien`
 --

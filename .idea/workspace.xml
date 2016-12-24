@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e95bc923-b223-4196-871c-c30349112b30" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/database/doan_web.sql" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/css/style.css" afterPath="$PROJECT_DIR$/admin/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/index.php" afterPath="$PROJECT_DIR$/admin/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/process2.php" afterPath="$PROJECT_DIR$/admin/process2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/theml.php" afterPath="$PROJECT_DIR$/admin/theml.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/xuly.php" afterPath="$PROJECT_DIR$/admin/xuly.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cart.php" afterPath="$PROJECT_DIR$/cart.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controller.php" afterPath="$PROJECT_DIR$/controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/our-products.php" afterPath="$PROJECT_DIR$/our-products.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products_loai.php" afterPath="$PROJECT_DIR$/products_loai.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,14 +52,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="products_loai.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="products_loai.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/products_loai.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="-132">
+              <caret line="33" column="43" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
               <folding>
-                <marker date="1482554820475" expanded="true" signature="1073:1134" ph="SELECT * FRO... nn_sanpham" />
+                <marker date="1482576069170" expanded="true" signature="1031:1092" ph="SELECT * FRO... nn_sanpham" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="our-products.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/our-products.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="32" column="56" lean-forward="false" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/controller.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1683">
-              <caret line="99" column="35" lean-forward="true" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
+              <caret line="99" column="35" lean-forward="false" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
               <folding>
                 <marker date="1482545340412" expanded="true" signature="319:383" ph="SELECT * FRO... nn_chungloai" />
                 <marker date="1482545340412" expanded="true" signature="478:519" ph="SELECT * FRO... nn_chungloai" />
@@ -107,7 +112,7 @@
         <entry file="file://$PROJECT_DIR$/admin/process2.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="595">
-              <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+              <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -117,7 +122,7 @@
         <entry file="file://$PROJECT_DIR$/admin/content_loai.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+              <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -155,7 +160,6 @@
         <option value="$PROJECT_DIR$/css/find-us.css" />
         <option value="$PROJECT_DIR$/find-us.php" />
         <option value="$PROJECT_DIR$/css/our-products.css" />
-        <option value="$PROJECT_DIR$/our-products.php" />
         <option value="$PROJECT_DIR$/our-story.php" />
         <option value="$PROJECT_DIR$/css/our-story.css" />
         <option value="$PROJECT_DIR$/admin/process.php" />
@@ -179,6 +183,7 @@
         <option value="$PROJECT_DIR$/admin/xuly.php" />
         <option value="$PROJECT_DIR$/cart.php" />
         <option value="$PROJECT_DIR$/products_loai.php" />
+        <option value="$PROJECT_DIR$/our-products.php" />
       </list>
     </option>
   </component>
@@ -256,7 +261,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -271,6 +275,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -395,15 +400,16 @@
       <workItem from="1482542035965" duration="3928000" />
       <workItem from="1482554572021" duration="847000" />
       <workItem from="1482560418599" duration="599000" />
+      <workItem from="1482575935109" duration="1235000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116522000" />
+    <option name="totallyTimeSpent" value="117757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24670571" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -529,13 +535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/our-products.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -681,7 +680,7 @@
     <entry file="file://$PROJECT_DIR$/admin/content_loai.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -689,7 +688,7 @@
     <entry file="file://$PROJECT_DIR$/admin/process2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
-          <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -697,7 +696,7 @@
     <entry file="file://$PROJECT_DIR$/controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1683">
-          <caret line="99" column="35" lean-forward="true" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
+          <caret line="99" column="35" lean-forward="false" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
           <folding>
             <marker date="1482545340412" expanded="true" signature="319:383" ph="SELECT * FRO... nn_chungloai" />
             <marker date="1482545340412" expanded="true" signature="478:519" ph="SELECT * FRO... nn_chungloai" />
@@ -783,11 +782,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/products_loai.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        <state relative-caret-position="-132">
+          <caret line="33" column="43" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
           <folding>
-            <marker date="1482554820475" expanded="true" signature="1073:1134" ph="SELECT * FRO... nn_sanpham" />
+            <marker date="1482576069170" expanded="true" signature="1031:1092" ph="SELECT * FRO... nn_sanpham" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/our-products.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="32" column="56" lean-forward="false" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -13,9 +13,11 @@ if (isset($_GET['idLoai'])) {
         $kqdmloai = $store->getLoaiByidLoai($idLoai);
         $dloaisp = mysql_fetch_array($kqdmloai);
         ?>
-        <h3 class="font_3" style="text-transform: uppercase;font-size: 40px;"><i class="fa fa-tree"
-                                                                                 aria-hidden="true"></i><?php echo $dloaisp['TenLoai']; ?>
-            <i class="fa fa-tree" aria-hidden="true"></i></h3>
+        <h3 class="font_3" style="text-transform: uppercase;font-size: 40px;">
+            <i class="fa fa-tree" aria-hidden="true"></i>
+                <?php echo $dloaisp['TenLoai']; ?>
+            <i class="fa fa-tree" aria-hidden="true"></i>
+        </h3>
     </div>
     <div class="container-fluid">
         <div class="row">
