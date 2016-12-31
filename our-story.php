@@ -22,11 +22,9 @@
                     <div>
                         <span class="font_6"><b>WEBSITE CUNG CẤP QUÀ TẶNG, ĐỒ LƯU NIỆM...</b></span>
                         <div>
-                            <h3 class="font_7"><em>------ Thành viên ------</em></h3>
+                            <h3 class="font_7"><em>------ Design by ------</em></h3>
                         </div>
                         <p class="font_8" style="margin-top: 20px;">NGUYỄN THANH SANG</p>
-                        <p class="font_8" style="margin-top: 20px;">NGUYỄN PHÚ CƯỜNG</p>
-                        <p class="font_8" style="margin-top: 20px;">LƯU TRUNG KIÊN </p>
 
                     </div>
                 </div>
